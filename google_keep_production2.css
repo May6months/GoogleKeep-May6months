@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section.google-keep-section {
+    max-width: 1700px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.google-keep-header {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 20px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.header-left {
+    width: 350px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-left>* {
+    color: gray;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.header-left>span {
+    cursor: pointer;
+}
+
+.header-middle {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: rgb(240, 238, 238);
+}
+
+.header-middle span {
+    font-size: 25px;
+    color: gray;
+}
+
+.header-middle input {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    padding: 0px 10px;
+    border: none;
+    background-color: rgb(240, 238, 238);
+    outline: none;
+}
+
+.header-right {
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-right span {
+    font-size: 25px;
+    color: gray;
+    cursor: pointer;
+}
+
+.google-keep-aside {
+    min-width: 250px;
+    background-color: rgb(255, 255, 255);
+}
+
+.google-keep-aside svg {
+    fill: gray;
+    font-size: 40px;
+}
+
+.aside-icons-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+button.aside-item-wrapper-btn {/* button as a wrapper*/
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+button.aside-item-wrapper-btn:hover {/* button as a wrapper*/
+    background-color: rgb(236, 236, 236);
+}
+
+button.aside-item-wrapper-btn:focus {/* button as a wrapper*/
+    background-color: #FEEFC3;
+}
+
+button.aside-item-wrapper-btn span {/* button as a wrapper*/
+    margin-left: 10%;
+    font-size: 17px;
+    color: gray;
+    font-family: sans-serif;
+}
+
+.google-keep-main {
+    height: calc(100vh - 70px);
+    display: flex;
+}
+
+.google-keep-article {
+    width: 100%;
+    padding: 20px;
+}
+
+/* for javascript start =============================*/
+.main-page-2 {
+    max-width: 500px;
+    width: 100%;
+    margin: 25px auto 25px auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    color: gray;
+    box-shadow: 0px 0px 7px 2px rgba(193, 193, 193, 0.75);
+    -webkit-box-shadow: 0px 0px 7px 2px rgba(193, 193, 193, 0.75);
+    -moz-box-shadow: 0px 0px 7px 2px rgba(193, 193, 193, 0.75);
+}
+
+#to-do-list {
+    min-height: 100px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#to-do-input {
+    border: none;
+    width: 100%;
+    background-color: rgb(240, 238, 238);
+    padding: 5px;
+    outline: none;
+    margin-top: 5px;
+}
+
+#create-to-do-button {
+    display: block;
+    margin-left: auto;
+    margin-top: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.todoWrapper {
+    position: relative;
+    width: 300px;
+    min-height: 100px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    list-style: none;
+    border-radius: 5px;
+    overflow-wrap: break-word;
+}
+
+.archive-button {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 2px;
+    display: grid;
+    place-content: center;
+}
+
+.archive-button svg {
+    fill: gray;
+}
+
+.archive-btn-2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    fill: grey;
+    margin: 2px;
+    display: grid;
+    place-content: center;
+}
+
+.archive-wrapper {
+    width: 300px;
+    min-height: 100px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.archive-title {
+    color: gray;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.li-li {
+    margin: 0 auto;
+    max-width: 300px;
+    width: 100%;
+    list-style: none;
+    margin-bottom: 5px;
+    padding: 10px;
+    list-style: none;
+    border-radius: 5px;
+    overflow-wrap: break-word;
+}
+
+.archive-page-2 {
+    order: 5px dotted black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px 2px rgba(193, 193, 193, 0.75);
+    -webkit-box-shadow: 0px 0px 7px 2px rgba(193, 193, 193, 0.75);
+    -moz-box-shadow: 0px 0px 7px 2px rgba(193, 193, 193, 0.75);
+}
+
+#archive-list {
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.delete-from-archive {
+    width: fit-content;
+    display: block;
+    border: none;
+    padding: 5px;
+    background-color: red;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    color: white;
+}
+
+/* for javascript end =============================*/
